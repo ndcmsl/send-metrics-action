@@ -1,0 +1,30 @@
+{
+  "name": "send-metrics-action",
+  "version": "1.0.0",
+  "description": "Send Deploy metrics to Covenant",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build -o lib src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.8.2",
+    "node-fetch": "3.2.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.34.0",
+    "typescript": "4.7.2"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndcmsl/send-metrics-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ndcmsl/send-metrics-action/issues"
+  },
+  "homepage": "https://github.com/ndcmsl/send-metrics-action#readme"
+}

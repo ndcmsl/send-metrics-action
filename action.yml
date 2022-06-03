@@ -1,0 +1,30 @@
+name: 'Send Metrics'
+description: 'Send Deploy metrics to Covenant'
+inputs:
+  host:
+    description: Host
+    required: true
+  value:
+    description: Value
+    required: true
+  dev:
+    description: Dev
+    required: true
+  infra:
+    description: Infrastructure
+    required: true
+  microservice:
+    description: Microservice
+    required: true    
+  version:
+    description: Version microservice
+    required: false
+  config:
+    description: Config
+    required: false
+  mode:
+    description: Mode
+    required: true
+runs:
+  using: 'node16'
+  main: 'lib/index.js'
